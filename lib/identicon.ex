@@ -7,6 +7,7 @@ defmodule Identicon do
     |> filter_odd_squares
     |> build_pixel_map
     |> draw_image
+    |> safe_image(input)
   end
 
   def hash_input(input) do
@@ -61,5 +62,9 @@ defmodule Identicon do
       :egd.filledRectangle(image, start, stop, fill)
     end
     :egd.render(image)
+  end
+
+  def safe_image(image, input) do
+    File.write("#{input}.png", image)
   end
 end
