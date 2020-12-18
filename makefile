@@ -1,4 +1,5 @@
 install:
+	mix local.rebar --force && \
 	mix deps.get
 
 tests:
