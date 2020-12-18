@@ -25,3 +25,6 @@ identicon-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+
+# Identicon images
+*.png
