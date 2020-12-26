@@ -1,6 +1,18 @@
 # Identicon
 
-Library to create identicons developed while learning Elixir.
+Library to create [identicons](https://en.wikipedia.org/wiki/Identicon)
+developed while learning Elixir.
+
+## Usage
+
+We can create an identicon given a string. For example the snippet below
+produces the following identicon image.
+
+```elixir
+Identicon.main("davide")
+```
+
+![davide-identicon](docs/davide-identicon.png)
 
 ## Installation
 
